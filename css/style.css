@@ -8,15 +8,18 @@ html {
 	box-sizing: inherit;
 }
 body {
-
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 /* --------------
 Header and Footer
 -------------- */
 header {
-    background-color: #39404c
+    margin: 0;
+    background-color: #39404c;
+    color: white;
 }
 footer {
-    background-color: #39404c
+    background-color: #39404c;
 }
