@@ -12,6 +12,28 @@ body {
     margin: 0;
 }
 
+/* -----
+Wrappers
+----- */
+.content-wrap {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1%;
+	overflow: hidden;
+}
+.flex {
+	display: flex;
+}
+.col-narrow {
+	width: 30%;
+	float: left;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 3%;
+}
+
 /* --------------
 Header and Footer
 -------------- */
@@ -22,4 +44,29 @@ header {
 }
 footer {
     background-color: #39404c;
+}
+
+/* ----------------
+Projects / Research
+---------------- */
+#m86 {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+}
+#m86 img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#m86 img.transparent {
+    opacity:0;
+}
+#m86_onclick {
+    cursor:pointer;
 }
