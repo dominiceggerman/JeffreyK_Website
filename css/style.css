@@ -2,71 +2,116 @@
 Global styles 
 ---------- */
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
+}
+img {
+    width: 100%;
 }
 
 /* -----
 Wrappers
 ----- */
 .content-wrap {
-	width: 100%;
-	margin: 0 auto;
-	padding: 1%;
-	overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+    overflow: hidden;
 }
 .flex {
-	display: flex;
+    display: flex;
 }
 .col-narrow {
-	width: 30%;
-	float: left;
+    width: 30%;
+    float: left;
 }
 .col-wide {
-	width: 70%;
-	float: left;
-	padding-left: 3%;
+    width: 70%;
+    float: left;
+    padding-left: 3%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+    grid-gap: 1%;
+}
+.grid-item {
+    display: block;
+    margin: auto;
 }
 
 /* --------------
 Header and Footer
 -------------- */
-header {
-    margin: 0;
-    background-color: #39404c;
-    color: white;
+
+/* -------
+Navigation
+------- */
+nav {
+    background: linear-gradient(rgba(22, 22, 105, 0.9), rgba(22, 22, 105, 0.8));
+    padding: 3em 2em;
+    text-align: center;
 }
-footer {
-    background-color: #39404c;
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Border animation */
+.borders-in a:before,
+.borders-in a:after,  {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+.borders-in a:before {
+    top: 0;
+    transform: translateY(-10px);
+}
+.borders-in a:after {
+    bottom: 0;
+    transform: translateY(10px);
+}
+.borders-in a:hover:before,
+.borders-in a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 /* ----------------
 Projects / Research
 ---------------- */
-/* #m86 {
-    position:relative;
-    height:281px;
-    width:450px;
-    margin:0 auto;
+#m86 {
+    position: relative;
+    margin: 0 auto;
+    height: 60vh;
 }
 #m86 img {
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
-
-#m86 img.transparent {
-    opacity:0;
+/* Class added on user click to hide top image */
+.hide-img {
+    opacity: 0;
 }
-#m86_onclick {
-    cursor:pointer;
-} */

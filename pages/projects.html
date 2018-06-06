@@ -4,57 +4,93 @@
 
 <head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage of Jeffrey Kenney</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage of Jeffrey Kenney</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
-    <!-- Scripts -->
+	<!-- Scripts -->
+	<script type="text/javascript" src="../scripts/script.js"></script>
 
 </head>
 
 
-<body>
+<body id="body">
 
-    <header>
+	<header role="banner">
 
-        <!-- Navigation -->
-        <nav id="nav-bar">
-            <a href="#about"> About </a>
-            <a href="index.html"> Research </a>
-            <a href="index.html"> Publications </a>
-            <a href=""> Teaching </a>
-            <a href="#contact"> Contact </a>
-        </nav>
-
-    </header>
-
-    <main role="main">
-
-        <!-- Project -->
-        <section class="content-wrap">
-            <!-- Narrow column for text -->
-            <div class="col-narrow">
-                <h2> Messier 86 </h2>
-                <h3> Gas Filaments from the Collision between the Giant Virgo Elliptical M86 and the spiral galaxy NGC 4438 </h3>
-                <p> Click the image to toggle viewing H&alpha; component. </p>
-            </div>
-            <!-- Wide column for images -->
-            <div class="col-wide" id="m86">
-                <img class="bottom" scr="../images/m86_2.png" width="200px" height="200px">
-                <img class="top" scr="../images/m86_2.png" width="400px" height="400px">
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
+		<!-- Navigation  -->
+		<nav id="nav-bar" class="borders-in">
+			<a href="index.html"> Home </a>
+			<a href="#about"> About </a>
+			<a href="projects.html"> Research </a>
+			<a href="index.html"> Publications </a>
+			<a href=""> Teaching </a>
+			<a href="#contact"> Contact </a>
+		</nav>
 
 
-    </footer>
+	</header>
+
+
+	<main role="main">
+
+		<!-- Project -->
+		<section class="proj-container">
+			<!-- Narrow column for text and project description -->
+			<div class="col-narrow">
+				<h2> Gas Filaments from the Collision between the Giant Virgo Elliptical M86 and the Spiral Galaxy NGC 4438. </h2>
+				<h3><em> Messier 86 and NGC 4438</em></h3>
+				<p> Click on the image to reveal H&alpha; filaments. <p>
+			</div>
+			<!-- Wide column for images -->
+			<div class="col-wide" id="m86">
+				<img src="../images/m86_rg2.jpg" alt="M86 H-alpha">
+				<img id="m86-top" src="../images/m86_2.jpg" onclick="toggleImage()" alt="M86 main">
+			</div>
+		</section>
+
+		<section class="proj-container">
+			<div class="col-narrow">
+				<h2> Pillars of Dust and Young Stars from Ram Pressure Stripping of the Giant Spiral NGC 4921 in the Coma CLuster </h2>
+				<h3><em>NGC 4921</em></h3>
+				<p> Descriptive text here </p>
+			</div>
+			<div class="col-wide">
+				<!-- Grid container for multiple images -->
+				<div class="grid-container">
+					<!-- Item in grid -->
+					<div class="grid-item">
+						<img src="../images/ngc4921_colombari_rotated.jpg" alt="NGC 4291 HST">
+					</div>
+					<div class="grid-item">
+						<img src="../images/ngc4921-color-hi-medium.jpg" alt="NGC 4291 HI labeled">
+					</div>
+					<div class="grid-item">
+						<img src="../images/ngc4921-fig2.jpg" alt="NGC 4291 dust front">
+					</div>
+					<div class="grid-item">
+						<img src="../images/n4921-hst-columbari-rotated+labels-small.jpg" alt="NGC 4291 zoom sections">
+					</div>
+					<div class="grid-item">
+						<img src="../images/ngc4921-fig3.jpg" alt="NGC 4291 dust front">
+					</div>
+					<div class="grid-item">
+						<img src="../images/ngc4921-fig4.jpg" alt="NGC 4291 dust front">
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<footer>
+
+	</footer>
 
 </body>
 
