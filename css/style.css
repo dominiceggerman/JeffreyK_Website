@@ -11,8 +11,14 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
 }
+section {
+    margin: 4% 1% 1% 1%;
+}
 img {
     width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 5px;
 }
 
 /* -----
@@ -39,24 +45,30 @@ Wrappers
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh;
     grid-gap: 1%;
 }
-.grid-item {
-    display: block;
+/* ?? */
+.grid-item-txt {
+    padding: 1%;
+}
+.grid-item-img {
+    display: relative;
     margin: auto;
 }
 
 /* --------------
 Header and Footer
 -------------- */
+header, footer {
+    background-color:rgb(40, 110, 160);
+    margin: 0;
+}
 
 /* -------
 Navigation
 ------- */
 nav {
-    background: linear-gradient(rgba(22, 22, 105, 0.9), rgba(22, 22, 105, 0.8));
-    padding: 3em 2em;
+    padding: 1.5em 0.5em;
     text-align: center;
 }
 nav a {
@@ -70,34 +82,11 @@ nav a {
     cursor: pointer;
 }
 /* Border animation */
-.borders-in a:before,
-.borders-in a:after,  {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-.borders-in a:before {
-    top: 0;
-    transform: translateY(-10px);
-}
-.borders-in a:after {
-    bottom: 0;
-    transform: translateY(10px);
-}
-.borders-in a:hover:before,
-.borders-in a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
-}
 
 /* ----------------
 Projects / Research
 ---------------- */
+/* M86 */
 #m86 {
     position: relative;
     margin: 0 auto;
@@ -112,6 +101,14 @@ Projects / Research
     transition: opacity 1s ease-in-out;
 }
 /* Class added on user click to hide top image */
-.hide-img {
+.hidden {
     opacity: 0;
+}
+
+/* NGC 4921 */
+.zoom:hover {
+    transition: transform 0.2s;
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3); /* Rest */
 }
