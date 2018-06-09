@@ -104,11 +104,54 @@ Projects / Research
 .hidden {
     opacity: 0;
 }
-
 /* NGC 4921 */
 .zoom:hover {
     transition: transform 0.2s;
     -ms-transform: scale(1.3); /* IE 9 */
     -webkit-transform: scale(1.3); /* Safari 3-8 */
     transform: scale(1.3); /* Rest */
+}
+/* NGC 4921 modal box (fullscreen image pop) */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 5%;
+    overflow: auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-size: 1.5em;
+}
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+}
+/* Close and navigation buttons for modal */
+.close {
+    color: white;
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    cursor: pointer;
+}
+.prev, .next {
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 50%;
+    padding: 3%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
 }
