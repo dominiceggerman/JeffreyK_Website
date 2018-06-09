@@ -13,3 +13,30 @@ function toggleImage() {
 /* ---------------
 NGC 4921 modal box
 --------------  */
+// Open the Modal
+function openModal() {
+    document.getElementById('modal').style.display = "block";
+}
+// Close the Modal
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+}
+// Show current slide
+function currentImg(n) {
+    showImg(imgIndex = n);
+}
+function changeImg(n) {
+    showImg(imgIndex += n);
+}
+// Show a slide
+function showImg(n) {
+    // Get the images
+    var imgs = document.getElementsByClassName("modal-content")
+    // Wrap (n)
+    if (n > imgs.length) {imgIndex = 1 }
+    if (n < 1) {imgIndex = imgs.length }
+    // Remove image display
+    for (i = 0; i < imgs.length; i++) { imgs[i].style.display = "none"; }
+    // Display the image that was clicked
+    imgs[imgIndex - 1].style.display = "block"
+}
