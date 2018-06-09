@@ -17,7 +17,6 @@ section {
 img {
     width: 100%;
     border: 1px solid #ddd;
-    border-radius: 1px;
     padding: 5px;
 }
 
@@ -74,7 +73,6 @@ nav {
 nav a {
     color: #FFF;
     text-decoration: none;
-    font: 20px Raleway;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
