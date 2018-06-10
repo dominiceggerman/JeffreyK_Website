@@ -58,7 +58,15 @@ Wrappers
 /* --------------
 Header and Footer
 -------------- */
-header, footer {
+header {
+    background: url("../images/header.svg") no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+.head-container {
+    text-align: center;
+}
+footer {
     background-color:rgb(40, 110, 160);
     margin: 0;
 }
