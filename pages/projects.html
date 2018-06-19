@@ -42,52 +42,47 @@
 		<!-- Project -->
 		<section class="content-wrap">
 			<!-- Narrow column for text and project description -->
-			<div class="col-narrow">
+			<div class="center-justify">
 				<h2> Gas Filaments from the Collision between the Giant Virgo Elliptical M86 and the Spiral Galaxy NGC 4438. </h2>
-				<h3>
-					<em> Messier 86 and NGC 4438</em>
-				</h3>
-				<p> Click on the image to reveal H&alpha; filaments.
-					<p>
+				<h3> <em> Messier 86 and NGC 4438</em> </h3>
+				<p> Click on the image to reveal H&alpha; filaments. </p>
 			</div>
 			<!-- Wide column for images -->
-			<div class="col-wide" id="m86">
-				<img src="../images/m86_rg2.jpg" alt="M86 H-alpha">
+			<div id="m86">
 				<img id="m86-top" src="../images/m86_2.jpg" onclick="toggleImage()" alt="M86 main">
+				<img src="../images/m86_rg2.jpg" alt="M86 H-alpha">
 			</div>
 		</section>
 
 		<!-- This is shown on page -->
-		<section class="content-wrap">
-			<div class="col-narrow">
+		<section>
+			<div class="center-justify">
 				<h2> Pillars of Dust and Young Stars from Ram Pressure Stripping of the Giant Spiral NGC 4921 in the Coma CLuster </h2>
 				<h3>
 					<em>NGC 4921</em>
 				</h3>
 				<p> Descriptive text here </p>
 			</div>
-			<div class="col-wide">
-				<!-- Grid container for multiple images -->
-				<div class="grid-container">
-					<!-- Item in grid (an image in a container) -->
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal();currentImg(1)" alt="NGC 4291 HST">
-					</div>
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal();currentImg(2)" alt="NGC 4291 HI labeled">
-					</div>
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/ngc4921-fig2.jpg" onclick="openModal();currentImg(3)" alt="NGC 4291 dust front">
-					</div>
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal();currentImg(4)" alt="NGC 4291 zoom sections">
-					</div>
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/ngc4921-fig3.jpg" onclick="openModal();currentImg(5)" alt="NGC 4291 dust front">
-					</div>
-					<div class="grid-item-img">
-						<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal();currentImg(6)" alt="NGC 4291 dust front">
-					</div>
+			<!-- Grid container for multiple images -->
+			<div class="grid-container">
+				<!-- Item in grid (an image in a container) -->
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal();currentImg(1)" alt="NGC 4291 HST">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal();currentImg(2)" alt="NGC 4291 HI labeled">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4921-fig2.jpg" onclick="openModal();currentImg(3)" alt="NGC 4291 dust front">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal();currentImg(4)" alt="NGC 4291 zoom sections">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4921-fig3.jpg" onclick="openModal();currentImg(5)" alt="NGC 4291 dust front">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal();currentImg(6)" alt="NGC 4291 dust front">
 				</div>
 			</div>
 			<!-- Popup (modal) image on click -->

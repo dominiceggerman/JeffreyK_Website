@@ -110,9 +110,9 @@ Projects / Research
 #m86 {
     position: relative;
     margin: 0 auto;
-    height: 60vh;
+    height: 100%;
 }
-#m86 img {
+#m86 img:first-child {
     position: absolute;
     left: 0;
     -webkit-transition: opacity 1s ease-in-out;
