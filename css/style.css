@@ -61,6 +61,7 @@ Wrappers
 .center-justify {
     text-align: justify;
     text-align-last: center;
+    opacity: 0.9;
 }
 .title-pad {
     margin: 0;
@@ -80,6 +81,7 @@ Wrappers
 /* ?? */
 .grid-item-txt {
     padding: 1%;
+    text-align: center;
 }
 .grid-item-img {
     display: relative;
