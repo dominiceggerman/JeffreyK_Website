@@ -42,22 +42,23 @@
 
 		<!-- Project -->
 		<section class="content-wrap">
-			<!-- Narrow column for text and project description -->
-			<div class="center">
-				<h2> Gas Filaments from the Collision between the Giant Virgo Elliptical M86 and the Spiral Galaxy NGC 4438. </h2>
+			<!-- Project description -->
+			<div>
+				<h2 class="center"> Gas Filaments from the Collision between the Giant Virgo Elliptical M86 and the Spiral Galaxy NGC 4438. </h2>
 				<p> Click on the image to reveal H&alpha; filaments. </p>
 			</div>
-			<!-- Wide column for images -->
+			<!-- Image -->
 			<div id="m86">
 				<img id="m86-top" src="../images/m86_2.jpg" onclick="toggleImage()" alt="M86 main">
 				<img src="../images/m86_rg2.jpg" alt="M86 H-alpha">
 			</div>
 		</section>
 
-		<!-- This is shown on page -->
+		<!-- Project -->
 		<section>
-			<div class="center">
-				<h2> Pillars of Dust and Young Stars from Ram Pressure Stripping of the Giant Spiral NGC 4921 in the Coma Cluster </h2>
+			<!-- This is shown on page -->
+			<div>
+				<h2 class="center"> Pillars of Dust and Young Stars from Ram Pressure Stripping of the Giant Spiral NGC 4921 in the Coma Cluster </h2>
 				<p> Descriptive text here </p>
 			</div>
 			<!-- Grid container for multiple images -->
@@ -82,7 +83,7 @@
 					<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal();currentImg(6)" alt="NGC 4291 dust front">
 				</div>
 			</div>
-			<!-- Popup (modal) image on click -->
+			<!-- Popup (modal) image on click (hidden) -->
 			<div id="modal">
 				<!-- Close button -->
 				<span class="close" onclick="closeModal()">&times;</span>
@@ -98,7 +99,39 @@
 				<img class="modal-content" src="../images/ngc4921-fig4.jpg" alt="NGC 4291 dust front">
 			</div>
 		</section>
-		
+
+		<!-- Project -->
+		<div>
+			<h2 class="center"> Ram Pressure Stripping in NGC 4522 </h2>
+			<p> NGC 4522 was one the first spiral galaxies with convincing evidence for ongoing ram pressure stripping, as it shows the
+				HI gas removed from the outside-in, a one-sided tail of HI gas, and an undisturbed stellar disk (Kenney et al.
+				<a target="_blank" href="https://arxiv.org/abs/astro-ph/0403103">2004</a>). It was the first galaxy shown to have star 
+				formation in the ram pressure stripped tail (Kenney &amp; Koopmann 1999), a phenomenon now known as a “jellyfish galaxy”. 
+				High resolution HST images (Abramson et al. <a target="_blank" href="https://arxiv.org/abs/1401.0023">2014</a>,
+				<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show small dust clouds that are dense enough to resist 
+				the initial stripping, so become decoupled from the rest of the stripped ISM, but then become ablated to form linear filamentary clouds. </p>
+		</div>
+		<!-- Images for NGC 4522 -->
+		<div class="grid-container">
+			<!-- Item in grid -->
+			<div class="grid-item-img">
+				<img class="zoom" src="../images/ngc4522-HI+Roptical.gif" alt="NGC 4522 HI">
+			</div>
+			<div class="grid-item-img">
+				<img class="zoom" src="../images/n4522-kk99-ha+r-3panel.gif" alt="NGC 4522 H-alpha + R 3-panel">
+			</div>
+			<div class="grid-item-img">
+				<img class="zoom" src="../images/n4522-hstimage-colombari-right-orientation.jpg" alt="NGC 4522 HST">
+			</div>
+			<div class="grid-item-img">
+				<img class="zoom" src="../images/n4522-hst-color-nolabel-bigger.jpg" alt="NGC 4522 HST color no labels">
+			</div>
+			<div class="grid-item-img">
+				<img class="zoom" src="../images/4522-structures-labelled.jpg" alt="NGC 4522 structures labelled">
+			</div>
+		</div>
+
+
 
 	</main>
 
