@@ -15,11 +15,11 @@ NGC 4921 modal box
 --------------  */
 // Open the Modal
 function openModal(modalNum) {
-    document.getElementById('modal' + modalNum).style.display = "block";
+    document.getElementById('modal-' + modalNum).style.display = "block";
 }
 // Close the Modal
 function closeModal(modalNum) {
-    document.getElementById('modal' + modalNum).style.display = "none";
+    document.getElementById('modal-' + modalNum).style.display = "none";
 }
 // Show current slide
 function currentImg(n, modalNum) {

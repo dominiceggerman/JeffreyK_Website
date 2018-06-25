@@ -65,6 +65,8 @@
 			<div class="grid-container">
 				<!-- Item in grid (an image in a container) -->
 				<div class="grid-item-img">
+					<!-- Onclick opens the modal box (larger images) on click - arguement corresponds to the project id  -->
+					<!-- Current image arguements - ID of the current image, modal of the project to open -->
 					<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal(1);currentImg(1, 1)" alt="NGC 4291 HST">
 				</div>
 				<div class="grid-item-img">
@@ -84,7 +86,7 @@
 				</div>
 			</div>
 			<!-- Popup (modal) image on click (hidden) -->
-			<div id="modal1">
+			<div id="modal-1">
 				<!-- Close button -->
 				<span class="close" onclick="closeModal(1)">&times;</span>
 				<!-- Modal left / right navigation -->
@@ -106,15 +108,15 @@
 				<h2 class="center"> Ram Pressure Stripping in NGC 4522 </h2>
 				<p> NGC 4522 was one the first spiral galaxies with convincing evidence for ongoing ram pressure stripping, as it shows the
 					HI gas removed from the outside-in, a one-sided tail of HI gas, and an undisturbed stellar disk (Kenney et al.
-					<a target="_blank" href="https://arxiv.org/abs/astro-ph/0403103">2004</a>). It was the first galaxy shown to have star 
-					formation in the ram pressure stripped tail (Kenney &amp; Koopmann 1999), a phenomenon now known as a “jellyfish galaxy”. 
-					High resolution HST images (Abramson et al. <a target="_blank" href="https://arxiv.org/abs/1401.0023">2014</a>,
-					<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show small dust clouds that are dense enough to resist 
-					the initial stripping, so become decoupled from the rest of the stripped ISM, but then become ablated to form linear filamentary clouds. </p>
+					<a target="_blank" href="https://arxiv.org/abs/astro-ph/0403103">2004</a>). It was the first galaxy shown to have star formation in the ram pressure stripped tail (Kenney &amp; Koopmann
+					1999), a phenomenon now known as a “jellyfish galaxy”. High resolution HST images (Abramson et al.
+					<a target="_blank"
+					 href="https://arxiv.org/abs/1401.0023">2014</a>,
+					<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show small dust clouds that are dense enough to resist the initial stripping, so become decoupled from the
+					rest of the stripped ISM, but then become ablated to form linear filamentary clouds. </p>
 			</div>
 			<!-- Images for NGC 4522 -->
 			<div class="grid-container">
-				<!-- Item in grid -->
 				<div class="grid-item-img">
 					<img class="zoom" src="../images/ngc4522-HI+Roptical.gif" onclick="openModal(2);currentImg(1, 2)" alt="NGC 4522 HI">
 				</div>
@@ -132,7 +134,7 @@
 				</div>
 			</div>
 			<!-- Modal popup -->
-			<div id="modal2">
+			<div id="modal-2">
 				<!-- Close button -->
 				<span class="close" onclick="closeModal(2)">&times;</span>
 				<!-- Modal left / right navigation -->
@@ -144,6 +146,49 @@
 				<img class="modal-content-2" src="../images/n4522-hstimage-colombari-right-orientation.jpg" alt="NGC 4522 HST">
 				<img class="modal-content-2" src="../images/n4522-hst-color-nolabel-bigger.jpg" alt="NGC 4522 HST color no labels">
 				<img class="modal-content-2" src="../images/4522-structures-labelled.jpg" alt="NGC 4522 structures labelled">
+			</div>
+		</section>
+
+		<!-- Project -->
+		<section>
+			<div>
+				<h2 class="center"> Ram Pressure Stripping in NGC 4402 </h2>
+				<p> The spiral galaxy NGC 4402 is a great example of active ram pressure stripping in the Virgo Cluster. Whereas NGC 4522
+					is moving away from us in the cluster, NGC 4402 is moving toward us, so that the leading side of the ram pressure interaction
+					is the near side. Thus we can see the strong impacts on the leading side more clearly. HST images (Abramson et al. <a target="_blank" href="https://arxiv.org/abs/1401.0023">2014</a>,
+					<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show that the outer disk has virtually no dust, since it has been stripped by ram pressure. Iirregular filaments
+					of dust blown out of the galaxy can be seen extending to the northwest (upper right). Near the outer edge of the stripped
+					dust disk, there are 2 large linear filaments that protrude outwards beyond the main stripping radius. These originate
+					from dense clouds which resist the initial stripping, so become decoupled from the rest of the stripped ISM, but then
+					become ablated to form linear filamentary clouds. One of these has a complex of young stars at its head. </p>
+			</div>
+			<!-- Images for NGC 4402 -->
+			<div class="grid-container">
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4402-hst-full-nolabel-color-bigger.jpg" onclick="openModal(3);currentImg(1, 3)" alt="NGC 4402 HST full color">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4402-hst-labelled-rps-features.jpg" onclick="openModal(3);currentImg(2, 3)" alt="NGC 4402 HST features labelled">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4402-hst-east-filament.jpg" onclick="openModal(3);currentImg(3, 3)" alt="NGC 4402 HST east filament">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4402-hst-3filaments.jpg" onclick="openModal(3);currentImg(4, 3)" alt="NGC HST 3 filaments">
+				</div>
+			</div>
+			<!-- Modal popup -->
+			<div id="modal-3">
+				<!-- Close button -->
+				<span class="close" onclick="closeModal(3)">&times;</span>
+				<!-- Modal left / right navigation -->
+				<span class="prev" onclick="changeImg(-1, 3)">&#10094;</span>
+				<span class="next" onclick="changeImg(1, 3)">&#10095;</span>
+				<!-- Modal Images -->
+				<img class="modal-content-3" src="../images/n4402-hst-full-nolabel-color-bigger.jpg" alt="NGC 4402 HST full color">
+				<img class="modal-content-3" src="../images/n4402-hst-labelled-rps-features.jpg" alt="NGC 4402 HST features labelled">
+				<img class="modal-content-3" src="../images/ngc4402-hst-east-filament.jpg" alt="NGC 4402 HST east filament">
+				<img class="modal-content-3" src="../images/ngc4402-hst-3filaments.jpg" alt="NGC HST 3 filaments">
 			</div>
 		</section>
 
