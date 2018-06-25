@@ -65,28 +65,28 @@
 			<div class="grid-container">
 				<!-- Item in grid (an image in a container) -->
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal();currentImg(1)" alt="NGC 4291 HST">
+					<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal(1);currentImg(1)" alt="NGC 4291 HST">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal();currentImg(2)" alt="NGC 4291 HI labeled">
+					<img class="zoom" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal(1);currentImg(2)" alt="NGC 4291 HI labeled">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig2.jpg" onclick="openModal();currentImg(3)" alt="NGC 4291 dust front">
+					<img class="zoom" src="../images/ngc4921-fig2.jpg" onclick="openModal(1);currentImg(3)" alt="NGC 4291 dust front">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal();currentImg(4)" alt="NGC 4291 zoom sections">
+					<img class="zoom" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal(1);currentImg(4)" alt="NGC 4291 zoom sections">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig3.jpg" onclick="openModal();currentImg(5)" alt="NGC 4291 dust front">
+					<img class="zoom" src="../images/ngc4921-fig3.jpg" onclick="openModal(1);currentImg(5)" alt="NGC 4291 dust front">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal();currentImg(6)" alt="NGC 4291 dust front">
+					<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal(1);currentImg(6)" alt="NGC 4291 dust front">
 				</div>
 			</div>
 			<!-- Popup (modal) image on click (hidden) -->
-			<div id="modal">
+			<div id="modal1">
 				<!-- Close button -->
-				<span class="close" onclick="closeModal()">&times;</span>
+				<span class="close" onclick="closeModal(1)">&times;</span>
 				<!-- Modal left / right navigation -->
 				<span class="prev" onclick="changeImg(-1)">&#10094;</span>
 				<span class="next" onclick="changeImg(1)">&#10095;</span>
@@ -101,37 +101,38 @@
 		</section>
 
 		<!-- Project -->
-		<div>
-			<h2 class="center"> Ram Pressure Stripping in NGC 4522 </h2>
-			<p> NGC 4522 was one the first spiral galaxies with convincing evidence for ongoing ram pressure stripping, as it shows the
-				HI gas removed from the outside-in, a one-sided tail of HI gas, and an undisturbed stellar disk (Kenney et al.
-				<a target="_blank" href="https://arxiv.org/abs/astro-ph/0403103">2004</a>). It was the first galaxy shown to have star 
-				formation in the ram pressure stripped tail (Kenney &amp; Koopmann 1999), a phenomenon now known as a “jellyfish galaxy”. 
-				High resolution HST images (Abramson et al. <a target="_blank" href="https://arxiv.org/abs/1401.0023">2014</a>,
-				<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show small dust clouds that are dense enough to resist 
-				the initial stripping, so become decoupled from the rest of the stripped ISM, but then become ablated to form linear filamentary clouds. </p>
-		</div>
-		<!-- Images for NGC 4522 -->
-		<div class="grid-container">
-			<!-- Item in grid -->
-			<div class="grid-item-img">
-				<img class="zoom" src="../images/ngc4522-HI+Roptical.gif" alt="NGC 4522 HI">
+		<section>
+			<div>
+				<h2 class="center"> Ram Pressure Stripping in NGC 4522 </h2>
+				<p> NGC 4522 was one the first spiral galaxies with convincing evidence for ongoing ram pressure stripping, as it shows the
+					HI gas removed from the outside-in, a one-sided tail of HI gas, and an undisturbed stellar disk (Kenney et al.
+					<a target="_blank" href="https://arxiv.org/abs/astro-ph/0403103">2004</a>). It was the first galaxy shown to have star 
+					formation in the ram pressure stripped tail (Kenney &amp; Koopmann 1999), a phenomenon now known as a “jellyfish galaxy”. 
+					High resolution HST images (Abramson et al. <a target="_blank" href="https://arxiv.org/abs/1401.0023">2014</a>,
+					<a target="_blank" href="https://arxiv.org/abs/1604.01883">2016</a>) show small dust clouds that are dense enough to resist 
+					the initial stripping, so become decoupled from the rest of the stripped ISM, but then become ablated to form linear filamentary clouds. </p>
 			</div>
-			<div class="grid-item-img">
-				<img class="zoom" src="../images/n4522-kk99-ha+r-3panel.gif" alt="NGC 4522 H-alpha + R 3-panel">
+			<!-- Images for NGC 4522 -->
+			<div class="grid-container">
+				<!-- Item in grid -->
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/ngc4522-HI+Roptical.gif" alt="NGC 4522 HI">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4522-kk99-ha+r-3panel.gif" alt="NGC 4522 H-alpha + R 3-panel">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4522-hstimage-colombari-right-orientation.jpg" alt="NGC 4522 HST">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/n4522-hst-color-nolabel-bigger.jpg" alt="NGC 4522 HST color no labels">
+				</div>
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/4522-structures-labelled.jpg" alt="NGC 4522 structures labelled">
+				</div>
 			</div>
-			<div class="grid-item-img">
-				<img class="zoom" src="../images/n4522-hstimage-colombari-right-orientation.jpg" alt="NGC 4522 HST">
-			</div>
-			<div class="grid-item-img">
-				<img class="zoom" src="../images/n4522-hst-color-nolabel-bigger.jpg" alt="NGC 4522 HST color no labels">
-			</div>
-			<div class="grid-item-img">
-				<img class="zoom" src="../images/4522-structures-labelled.jpg" alt="NGC 4522 structures labelled">
-			</div>
-		</div>
-
-
+			<!-- Modal popup -->
+		</section>
 
 	</main>
 

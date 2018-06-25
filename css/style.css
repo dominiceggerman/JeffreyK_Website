@@ -165,7 +165,7 @@ Projects / Research
     transform: scale(1.2); /* Rest */
 }
 /* NGC 4921 modal box (fullscreen image pop) */
-#modal {
+#modal1 {
     display: none;
     position: fixed;
     z-index: 1;

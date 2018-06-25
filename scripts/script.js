@@ -14,12 +14,12 @@ function toggleImage() {
 NGC 4921 modal box
 --------------  */
 // Open the Modal
-function openModal() {
-    document.getElementById('modal').style.display = "block";
+function openModal(modalNum) {
+    document.getElementById('modal' + modalNum).style.display = "block";
 }
 // Close the Modal
-function closeModal() {
-    document.getElementById('modal').style.display = "none";
+function closeModal(modalNum) {
+    document.getElementById('modal' + modalNum).style.display = "none";
 }
 // Show current slide
 function currentImg(n) {
