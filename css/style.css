@@ -116,6 +116,9 @@ Wrappers
     display: relative;
     margin: auto;
 }
+.grid-item-img:hover {
+    cursor: pointer;
+}
 
 /* -------
 Navigation
@@ -165,7 +168,7 @@ Projects / Research
     transform: scale(1.2); /* Rest */
 }
 /* NGC 4921 modal box (fullscreen image pop) */
-#modal1 {
+#modal1, #modal2 {
     display: none;
     position: fixed;
     z-index: 1;
