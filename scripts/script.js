@@ -22,16 +22,16 @@ function closeModal(modalNum) {
     document.getElementById('modal' + modalNum).style.display = "none";
 }
 // Show current slide
-function currentImg(n) {
-    showImg(imgIndex = n);
+function currentImg(n, modalNum) {
+    showImg(imgIndex = n, modalNum);
 }
-function changeImg(n) {
-    showImg(imgIndex += n);
+function changeImg(n, modalNum) {
+    showImg(imgIndex += n, modalNum);
 }
 // Show a slide
-function showImg(n) {
+function showImg(n, modalNum) {
     // Get the images
-    var imgs = document.getElementsByClassName("modal-content")
+    var imgs = document.getElementsByClassName("modal-content-" + modalNum)
     // Wrap (n)
     if (n > imgs.length) {imgIndex = 1 }
     if (n < 1) {imgIndex = imgs.length }
