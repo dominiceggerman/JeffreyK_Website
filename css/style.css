@@ -12,15 +12,24 @@ body {
     margin: 0;
     font-size: 18px;
 }
+section {
+    margin: 5% 0;
+}
+section:nth-of-type(even) {
+    background-color: rgb(220, 220, 220);
+}
+section:last-of-type {
+    margin-bottom: 0;
+}
 /* Text */
 h1, h2 {
     color: rgb(40, 110, 160);
-    margin: 0;
+    margin: 1% 0;
     padding: 1.5%;
 }
 h3, h4, h5, h6 {
-    margin: 0;
-    padding: 1.5%;
+    margin: 1% 0;
+    padding: 1%;
 }
 p {
     margin: 2%;
