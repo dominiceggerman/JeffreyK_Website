@@ -30,4 +30,9 @@ Mobile media (phones) - < 815px
         margin: 0;
     }
 
+    /* Images */
+    #m86 img {
+        max-width: 100%;
+    }
+
 }

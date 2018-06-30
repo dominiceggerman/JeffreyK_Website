@@ -140,16 +140,19 @@ Projects / Research
 #m86 {
     position: relative;
     margin: 0 auto;
-    height: 100%;
 }
 #m86 img:first-child {
     position: absolute;
-    left: 0;
-    /* height: 800px; */
+    width: auto;
+    height: auto;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
+}
+#m86 img:last-child {
+    width: auto;
+    height: auto;
 }
 /* Class added on user click to hide top image */
 .hidden {
