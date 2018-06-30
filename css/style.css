@@ -53,6 +53,9 @@ Header and Footer
 header {
     position: relative;
 }
+.head-title {
+    margin: 3rem 0;
+}
 .header-back {
     background: url(../images/m86_rg2.jpg);
     background-position: center;
@@ -142,6 +145,7 @@ Projects / Research
 #m86 img:first-child {
     position: absolute;
     left: 0;
+    /* height: 800px; */
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;

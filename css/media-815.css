@@ -1,0 +1,41 @@
+/* -------------------
+Mobile media - < 815px
+------------------- */
+
+@media screen and (max-width: 815px) {
+
+    /* General */
+    body {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+        letter-spacing: 0.07rem;
+        line-height: 1.5rem;
+    }
+
+    /* Header / Footer */
+    footer p {
+        margin: 0.4rem 0;
+        font-size: 0.7rem;
+        letter-spacing: 0.05rem;
+        line-height: 0.8rem;
+    }
+
+    /* Nav */
+    nav a {
+        margin: 0;
+    }
+
+    /* Images (resize) */
+    #m86 img:first-child {
+        max-height: 700px;
+    }
+    #m86 img:last-child {
+        max-height: 700px;
+    }
+
+}
