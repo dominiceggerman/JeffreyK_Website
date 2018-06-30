@@ -1,8 +1,8 @@
-/* -------------------
-Mobile media - < 815px
-------------------- */
+/* ----------------------------
+Mobile media (phones) - < 815px
+---------------------------- */
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 500px) {
 
     /* General */
     body {
@@ -28,14 +28,6 @@ Mobile media - < 815px
     /* Nav */
     nav a {
         margin: 0;
-    }
-
-    /* Images (resize) */
-    #m86 img:first-child {
-        max-height: 700px;
-    }
-    #m86 img:last-child {
-        max-height: 700px;
     }
 
 }

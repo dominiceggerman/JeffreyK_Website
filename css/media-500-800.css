@@ -1,0 +1,33 @@
+/* ----------------------------------
+Mobile media (tablets) - 816 - 1100px
+---------------------------------- */
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+
+    /* General */
+    body {
+        font-size: 20px;
+    }
+    p {
+        font-size: 1.5rem;
+        letter-spacing: 0.07rem;
+        line-height: 1.75rem;
+    }
+
+    /* Header / Footer */
+    footer p {
+        margin: 0.4rem 0;
+        font-size: 1.4rem;
+        letter-spacing: 0.07rem;
+        /* line-height: 0.8rem; */
+    }
+
+    /* Images (resize) */
+    #m86 img:first-child {
+        max-height: 900px;
+    }
+    #m86 img:last-child {
+        max-height: 900px;
+    }
+
+}
