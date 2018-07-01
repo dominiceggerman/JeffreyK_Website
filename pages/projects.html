@@ -64,11 +64,30 @@
 					Cluster.
 				</p>
 			</div>
-			<!-- Image -->
+			<!-- Main H-alpha image -->
 			<p> Click on the image to reveal H-alpha filaments. </p>
 			<div id="m86" class="center">
 				<img id="m86-top" src="../images/m86_2.jpg" onclick="toggleImage()" alt="M86 main">
 				<img src="../images/m86_rg2.jpg" alt="M86 H-alpha">
+			</div>
+			<!-- AdditionaliImages for M86 -->
+			<div class="grid-container">
+				<div class="grid-item-img">
+					<img class="zoom" src="../images/m86+ngc4438-3panel-large-fg2.jpeg" onclick="openModal(0);currentImg(0, 1)" alt="M86 3-pannel">
+				</div>
+			</div>
+			<!-- Modal popup -->
+			<div id="modal-0">
+				<!-- Close button -->
+				<span class="close" onclick="closeModal(0)">&times;</span>
+				<!-- Modal left / right navigation -->
+				<span class="prev" onclick="changeImg(-1, 0)">&#10094;</span>
+				<span class="next" onclick="changeImg(1, 0)">&#10095;</span>
+				<!-- Modal Images -->
+				<div class="modal-content-0">
+					<img src="../images/m86+ngc4438-3panel-large-fg2.jpeg" alt="M86 3-pannel">
+					<p> desription. </p>
+				</div>
 			</div>
 		</section>
 

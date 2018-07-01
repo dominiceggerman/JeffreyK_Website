@@ -184,6 +184,7 @@ Projects / Research
     transform: scale(1.2); /* Rest */
 }
 /* NGC 4921 modal box (fullscreen image pop) */
+#modal-0,
 #modal-1,
 #modal-2,
 #modal-3,
@@ -200,6 +201,7 @@ Projects / Research
     background-color: rgba(0, 0, 0, 0.95);
     font-size: 1.5rem;
 }
+.modal-content-0,
 .modal-content-1,
 .modal-content-2,
 .modal-content-3,
