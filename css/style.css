@@ -113,6 +113,18 @@ Wrappers
 .grid-item-img:hover {
     cursor: pointer;
 }
+.flex {
+	display: flex;
+}
+.col-narrow {
+	width: 30%;
+    float: left;
+}
+.col-wide {
+    display: inline-block;
+	width: 70%;
+	padding-left: 1%;
+}
 
 /* -------
 Navigation
@@ -132,6 +144,12 @@ nav a {
     cursor: pointer;
 }
 /* Border animation */
+
+/* -----
+Homepage
+----- */
+/* About and profile image */
+
 
 /* ----------------
 Projects / Research
