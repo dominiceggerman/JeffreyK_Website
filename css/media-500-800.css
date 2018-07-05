@@ -22,9 +22,4 @@ Mobile media (tablets) - 816 - 1100px
         line-height: 1.5rem;
     }
 
-    /* Images */
-    #m86 img, #d100 img {
-        max-width: 100%;
-    }
-
 }

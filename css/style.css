@@ -155,22 +155,21 @@ Homepage
 Projects / Research
 ---------------- */
 /* M86 */
-#m86, #d100 {
+.h-alpha-pair {
     position: relative;
     margin: 0 auto;
 }
-#m86 img:first-child, #d100 img:first-child {
-    position: absolute;
+.h-alpha-pair img {
+    max-width: 100%;
     width: auto;
     height: auto;
+}
+.h-alpha-pair img:first-child {
+    position: absolute;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
-}
-#m86 img:last-child, #d100 img:last-child {
-    width: auto;
-    height: auto;
 }
 /* Class added on user click to hide top image */
 .hidden {
