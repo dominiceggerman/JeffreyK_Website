@@ -5,9 +5,10 @@ Scripts for Jeffrey Kenney's Website
 /* -----------------
 M86 H-alpha toggling
 ----------------- */
-function toggleImage() {
-    // Get top image and add/remove the hidden class
-    document.getElementById("m86-top").classList.toggle("hidden");
+function toggleImage(imgNum) {
+    // Get top images and add/remove the hidden class from the clicked one
+    var imgs = document.getElementsByClassName("top-img")
+    imgs[imgNum].classList.toggle("hidden");
 }
 
 /* ----------------
