@@ -349,7 +349,7 @@
 		</section>
 
 		<!-- D100 - uncomment to implement -->
-		<!-- <section>
+		<section>
 			<div>
 				<h2 class="center"> A Remarkably Long and Thin Ram Pressure Stripped Tail </h2>
 				<p> D100 is a spiral galaxy in the Coma Cluster experiencing strong ram pressure stripping, as revealed by the very long
@@ -364,37 +364,29 @@
 					it is a galaxy similar to D99, but observed at a later evolutionary stage. The blue-ish dwarf galaxy below D100 also
 					has no star formation, and also likely suffered stripping.
 				</p>
-			</div> -->
+			</div>
+			<!-- Main H-alpha image -->
+			<p> Click on the image to reveal H-alpha filaments. </p>
+			<div id="d100" class="center">
+				<img id="top-img" src="../images/D100_wideCrop_180702.png" onclick="toggleImage()" alt="D100 main">
+				<img src="../images/D100_wideCrop_Ha_180702.png" alt="D100 H-alpha">
+			</div>
 			<!-- Images for IC 3418 -->
-			<!-- <div class="grid-container">
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/D100_180219_475+814-crop.png" onclick="openModal(5);currentImg(1, 5)" alt="D100 cropped">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/D100_180216-475+814-with-halpha.png" onclick="openModal(5);currentImg(2, 5)" alt="D100 with H-alpha">
-				</div>
+			<div class="grid-container">
 				<div class="grid-item-img">
 					<img class="zoom" src="../images/d100_dust_tail.png" onclick="openModal(5);currentImg(3, 5)" alt="D100 dust tail">
 				</div>
 				<div class="grid-item-img">
 					<img class="zoom" src="../images/d100+d99+dwarf-sub.jpg" onclick="openModal(5);currentImg(4, 5)" alt="D100 dwarf sub-focus">
 				</div>
-			</div> -->
+			</div>
 			<!-- Modal popup -->
-			<!-- <div id="modal-5"> -->
+			<div id="modal-5">
 				<!-- Close button and left / right nav -->
-				<!-- <span class="close" onclick="closeModal(5)">&times;</span>
+				<span class="close" onclick="closeModal(5)">&times;</span>
 				<span class="prev" onclick="changeImg(-1, 5)">&#10094;</span>
-				<span class="next" onclick="changeImg(1, 5)">&#10095;</span> -->
+				<span class="next" onclick="changeImg(1, 5)">&#10095;</span>
 				<!-- Modal Images -->
-				<!-- <div class="modal-content-5">
-					<img src="../images/D100_180219_475+814-crop.png" alt="D100 cropped">
-					<p> description. </p>
-				</div>
-				<div class="modal-content-5">
-					<img src="../images/D100_180216-475+814-with-halpha.png" alt="D100 with H-alpha">
-					<p> description. </p>
-				</div>
 				<div class="modal-content-5">
 					<img src="../images/d100_dust_tail.png" alt="D100 dust tail">
 					<p> description. </p>
@@ -404,7 +396,7 @@
 					<p> description. </p>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 	</main>
 

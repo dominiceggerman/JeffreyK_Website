@@ -23,7 +23,7 @@ Mobile media (tablets) - 816 - 1100px
     }
 
     /* Images */
-    #m86 img {
+    #m86 img, #d100 img {
         max-width: 100%;
     }
 

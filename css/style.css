@@ -155,11 +155,11 @@ Homepage
 Projects / Research
 ---------------- */
 /* M86 */
-#m86 {
+#m86, #d100 {
     position: relative;
     margin: 0 auto;
 }
-#m86 img:first-child {
+#m86 img:first-child, #d100 img:first-child {
     position: absolute;
     width: auto;
     height: auto;
@@ -168,7 +168,7 @@ Projects / Research
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
-#m86 img:last-child {
+#m86 img:last-child, #d100 img:last-child {
     width: auto;
     height: auto;
 }

@@ -31,7 +31,7 @@ Mobile media (phones) - < 815px
     }
 
     /* Images */
-    #m86 img {
+    #m86 img, #d100 img {
         max-width: 100%;
     }
 
