@@ -110,6 +110,10 @@ Wrappers
     display: relative;
     margin: auto;
 }
+/* ?? */
+.grid-item-img img {
+    max-height: 25vh;
+}
 .grid-item-img:hover {
     cursor: pointer;
 }
