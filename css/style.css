@@ -40,6 +40,18 @@ p {
 hr {
     border-color: rgb(40, 110, 160);
 }
+a {
+    /* text-decoration: none; */
+}
+a:hover {
+    text-decoration: none;
+    background-color:  rgb(126, 175, 231);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
 /* Images */
 img {
     width: 100%;
@@ -139,6 +151,7 @@ nav {
 }
 nav a {
     color: #FFF;
+    font-size: 1.2rem;
     text-decoration: none;
     margin: 0 1rem;
     padding: 0.5rem 0.5rem;
@@ -146,14 +159,6 @@ nav a {
     z-index: 0;
     cursor: pointer;
     border-radius: 10%;
-}
-nav a:hover {
-    background-color:  rgb(65, 137, 219);
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
 }
 /* Border animation */
 
