@@ -121,9 +121,14 @@ Wrappers
     display: relative;
     margin: auto;
 }
+/* Last row of grid */
 /* ?? */
 .grid-item-img img {
     max-height: 25vh;
+}
+.auto-width img{
+    width: auto;
+    max-width: 33%;
 }
 .grid-item-img:hover {
     cursor: pointer;
