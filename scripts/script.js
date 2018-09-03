@@ -11,6 +11,22 @@ function toggleImage(imgNum) {
     imgs[imgNum].classList.toggle("hidden");
 }
 
+/* --------------
+Project slideshow
+-------------- */
+// Change slide
+var slideIndexes = [1, 1, 1, 1, 1, 1];
+// Show slide
+function changeSlide(n, projNum) {
+    var slides = document.getElementsByClassName("scroll-item-image-" + projNum)
+    var changeTo = slideIndexes[projNum] + n
+    // Wrap
+    if (changeTo > slides.length) { changeTo = 1; }
+    if (changeTo < 1) { changeTo = slides.length; }
+    for (var i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+    slides[changeTo-1].style.display = "block";
+    slideIndexes[projNum] = changeTo;
+}
 /* ----------------
 Project modal boxes
 ---------------- */

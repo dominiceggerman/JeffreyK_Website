@@ -175,7 +175,6 @@ nav a {
     cursor: pointer;
     border-radius: 10%;
 }
-/* Border animation */
 
 /* -----
 Homepage
@@ -186,7 +185,6 @@ Homepage
 /* ----------------
 Projects / Research
 ---------------- */
-/* M86 */
 .h-alpha-pair {
     position: relative;
     margin: 0 auto;
@@ -207,14 +205,15 @@ Projects / Research
 .hidden {
     opacity: 0;
 }
-/* NGC 4921 */
-.zoom:hover {
-    transition: transform 0.2s;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); /* Rest */
+
+/* Image slides */
+.scroll-item-image-1 {
+    display: none;
 }
-/* NGC 4921 modal box (fullscreen image pop) */
+.show-img {
+    display: block;
+}
+/* Modal box (fullscreen image pop) */
 #modal-0,
 #modal-1,
 #modal-2,

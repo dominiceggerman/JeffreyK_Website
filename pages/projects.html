@@ -73,7 +73,7 @@
 			</p>
 			<!-- Additional Images for M86 -->
 			<div class="grid-item-img auto-width center">
-				<img class="zoom" src="../images/m86+ngc4438-3panel-large-fg2.jpeg" onclick="openModal(0);currentImg(0, 1)" alt="M86 3-pannel">
+				<img src="../images/m86+ngc4438-3panel-large-fg2.jpeg" onclick="openModal(0);currentImg(0, 1)" alt="M86 3-pannel">
 			</div>
 			<!-- Modal popup -->
 			<div id="modal-0">
@@ -105,33 +105,20 @@
 					high and low density parts of the ISM are bound together by magnetic fields, as illustrated in the cartoon.
 				</p>
 			</div>
-			<!-- Grid container for multiple images -->
-			<div class="grid-container">
-				<!-- Item in grid (an image in a container) -->
-				<div class="grid-item-img">
-					<!-- Onclick opens the modal box (larger images) on click - arguement corresponds to the project id  -->
-					<!-- Current image arguements - ID of the current image, modal of the project to open -->
-					<img class="zoom" src="../images/ngc4921_colombari_rotated.jpg" onclick="openModal(1);currentImg(1, 1)" alt="NGC 4291 HST">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal(1);currentImg(2, 1)" alt="NGC 4291 HI labeled">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal(1);currentImg(3, 1)" alt="NGC 4291 zoom sections">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig2.jpg" onclick="openModal(1);currentImg(4, 1)" alt="NGC 4291 dust front">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig3.jpg" onclick="openModal(1);currentImg(5, 1)" alt="NGC 4291 dust front">
-				</div>
-				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4921-fig4.jpg" onclick="openModal(1);currentImg(6, 1)" alt="NGC 4291 dust front">
-				</div>
+			<!-- Container for scroll images -->
+			<div class="scroll-container">
+				<!-- Onclick opens the modal box (larger images) on click - arguement corresponds to the project id  -->
+				<!-- Current image arguements - ID of the current image, modal of the project to open -->
+				<img class="scroll-item-image-1 show-img" src="../images/ngc4921-color-hi-medium.jpg" onclick="openModal(1);currentImg(2, 1)" alt="NGC 4291 HI labeled">
+				<img class="scroll-item-image-1" src="../images/n4921-hst-columbari-rotated+labels-small.jpg" onclick="openModal(1);currentImg(3, 1)" alt="NGC 4291 zoom sections">
+				<img class="scroll-item-image-1" src="../images/ngc4921-fig2.jpg" onclick="openModal(1);currentImg(4, 1)" alt="NGC 4291 dust front">
+				<img class="scroll-item-image-1" src="../images/ngc4921-fig3.jpg" onclick="openModal(1);currentImg(5, 1)" alt="NGC 4291 dust front">
+				<img class="scroll-item-image-1" src="../images/ngc4921-fig4.jpg" onclick="openModal(1);currentImg(6, 1)" alt="NGC 4291 dust front">
+				<img class="scroll-item-image-1" src="../images/ngc4921-filament-decoupling-Bfields-cartoon.jpg" onclick="openModal(1);currentImg(7, 1)" alt="NGC 4291 decoupling magnetic fields cartoon">
 			</div>
-			<div class="grid-item-img auto-width center">
-				<img class="zoom" src="../images/ngc4921-filament-decoupling-Bfields-cartoon.jpg" onclick="openModal(1);currentImg(7, 1)" alt="NGC 4291 decoupling magnetic fields cartoon">
-			</div>
+			<!-- Buttons to move left / right in slideshow -->
+			<span class="display-left" onclick="changeSlide(-1, 1)">&#10094;</span>
+			<span class="display-right" onclick="changeSlide(+1, 1)">&#10095;</span>
 			<!-- Popup (modal) image on click (hidden) -->
 			<div id="modal-1">
 				<!-- Close button -->
@@ -188,20 +175,20 @@
 			<!-- Images for NGC 4522 -->
 			<div class="grid-container">
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4522-HI+Roptical.gif" onclick="openModal(2);currentImg(1, 2)" alt="NGC 4522 HI">
+					<img src="../images/ngc4522-HI+Roptical.gif" onclick="openModal(2);currentImg(1, 2)" alt="NGC 4522 HI">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4522-kk99-ha+r-3panel.gif" onclick="openModal(2);currentImg(2, 2)" alt="NGC 4522 H-alpha + R 3-panel">
+					<img src="../images/n4522-kk99-ha+r-3panel.gif" onclick="openModal(2);currentImg(2, 2)" alt="NGC 4522 H-alpha + R 3-panel">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4522-hstimage-colombari-right-orientation.jpg" onclick="openModal(2);currentImg(3, 2)"
+					<img src="../images/n4522-hstimage-colombari-right-orientation.jpg" onclick="openModal(2);currentImg(3, 2)"
 					 alt="NGC 4522 HST">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4522-hst-color-nolabel-bigger.jpg" onclick="openModal(2);currentImg(4, 2)" alt="NGC 4522 HST color no labels">
+					<img src="../images/n4522-hst-color-nolabel-bigger.jpg" onclick="openModal(2);currentImg(4, 2)" alt="NGC 4522 HST color no labels">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/4522-structures-labelled.jpg" onclick="openModal(2);currentImg(5, 2)" alt="NGC 4522 structures labelled">
+					<img src="../images/4522-structures-labelled.jpg" onclick="openModal(2);currentImg(5, 2)" alt="NGC 4522 structures labelled">
 				</div>
 			</div>
 			<!-- Modal popup -->
@@ -253,17 +240,17 @@
 			<!-- Images for NGC 4402 -->
 			<div class="grid-container">
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4402-hst-full-nolabel-color-bigger.jpg" onclick="openModal(3);currentImg(1, 3)" alt="NGC 4402 HST full color">
+					<img src="../images/n4402-hst-full-nolabel-color-bigger.jpg" onclick="openModal(3);currentImg(1, 3)" alt="NGC 4402 HST full color">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/n4402-hst-labelled-rps-features.jpg" onclick="openModal(3);currentImg(2, 3)" alt="NGC 4402 HST features labelled">
+					<img src="../images/n4402-hst-labelled-rps-features.jpg" onclick="openModal(3);currentImg(2, 3)" alt="NGC 4402 HST features labelled">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ngc4402-hst-east-filament.jpg" onclick="openModal(3);currentImg(3, 3)" alt="NGC 4402 HST east filament">
+					<img src="../images/ngc4402-hst-east-filament.jpg" onclick="openModal(3);currentImg(3, 3)" alt="NGC 4402 HST east filament">
 				</div>
 			</div>
 			<div class="grid-item-img auto-width center">
-				<img class="zoom" src="../images/ngc4402-hst-3filaments.jpg" onclick="openModal(3);currentImg(4, 3)" alt="NGC HST 3 filaments">
+				<img src="../images/ngc4402-hst-3filaments.jpg" onclick="openModal(3);currentImg(4, 3)" alt="NGC HST 3 filaments">
 			</div>
 			<!-- Modal popup -->
 			<div id="modal-3">
@@ -308,17 +295,17 @@
 			<!-- Images for IC 3418 -->
 			<div class="grid-container">
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/IC_3418_UV+opt.jpg" onclick="openModal(4);currentImg(1, 4)" alt="IC 3418 UV and opical">
+					<img src="../images/IC_3418_UV+opt.jpg" onclick="openModal(4);currentImg(1, 4)" alt="IC 3418 UV and opical">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ic3418-in-virgo.PNG" onclick="openModal(4);currentImg(2, 4)" alt="IC 3418 in Virgo Cluster">
+					<img src="../images/ic3418-in-virgo.PNG" onclick="openModal(4);currentImg(2, 4)" alt="IC 3418 in Virgo Cluster">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/ic3418-Halpha+NUV-fireballs.jpg" onclick="openModal(4);currentImg(3, 4)" alt="IC 3418 H-alpha and near-UV and 'fireballs'">
+					<img src="../images/ic3418-Halpha+NUV-fireballs.jpg" onclick="openModal(4);currentImg(3, 4)" alt="IC 3418 H-alpha and near-UV and 'fireballs'">
 				</div>
 			</div>
 			<div class="grid-item-img auto-width center">
-				<img class="zoom" src="../images/ic3418-fireball-cartoon.gif" onclick="openModal(4);currentImg(4, 4)" alt="IC 3418 fireball cartoon">
+				<img src="../images/ic3418-fireball-cartoon.gif" onclick="openModal(4);currentImg(4, 4)" alt="IC 3418 fireball cartoon">
 			</div>
 			<!-- Modal popup -->
 			<div id="modal-4">
@@ -373,10 +360,10 @@
 			<!-- Images for IC 3418 -->
 			<div class="grid-container">
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/d100_dust_tail.png" onclick="openModal(5);currentImg(1, 5)" alt="D100 dust tail">
+					<img src="../images/d100_dust_tail.png" onclick="openModal(5);currentImg(1, 5)" alt="D100 dust tail">
 				</div>
 				<div class="grid-item-img">
-					<img class="zoom" src="../images/d100+d99+dwarf-sub.jpg" onclick="openModal(5);currentImg(2, 5)" alt="D100 dwarf sub-focus">
+					<img src="../images/d100+d99+dwarf-sub.jpg" onclick="openModal(5);currentImg(2, 5)" alt="D100 dwarf sub-focus">
 				</div>
 			</div>
 			<!-- Modal popup -->
