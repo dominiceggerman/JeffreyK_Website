@@ -9,15 +9,29 @@ Mobile media (phones) - < 815px
         font-size: 15px;
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    body h2 {
+        padding: 3%;
+    }
+    h3 {
+        margin: 2%;
+    }
+    h4 {
+        font-size: 0.85rem;
     }
     p {
+        padding: 0.1rem;
+        margin: 0 2%;
         font-size: 0.9rem;
         letter-spacing: 0.07rem;
         line-height: 1.5rem;
     }
 
     /* Header / Footer */
+    .header-back {
+        height: 40vh;
+    }
     footer p {
         margin: 0.4rem 0;
         font-size: 0.7rem;
@@ -28,6 +42,7 @@ Mobile media (phones) - < 815px
     /* Nav */
     nav a {
         margin: 0;
+        font-size: 1rem;
     }
 
 }
