@@ -27,6 +27,9 @@ Mobile media (phones) - < 815px
         letter-spacing: 0.07rem;
         line-height: 1.5rem;
     }
+    .comment {
+        font-size: 0.7rem;
+    }
 
     /* Header / Footer */
     .header-back {

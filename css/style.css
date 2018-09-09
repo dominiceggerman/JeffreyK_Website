@@ -38,6 +38,9 @@ p {
     letter-spacing: 0.07rem;
     line-height: 2rem;
 }
+.comment {
+    font-size: 0.9rem;
+}
 hr {
     border-color: rgb(40, 110, 160);
 }
@@ -131,29 +134,12 @@ Wrappers
     display: relative;
     margin: auto;
 }
-/* Last row of grid */
-/* ?? */
 .grid-item-img img {
-    max-height: 25vh;
+    max-height: 40vh;
 }
-.auto-width img{
+.third-width {
     width: auto;
-    max-width: 33%;
-}
-.grid-item-img:hover {
-    cursor: pointer;
-}
-.flex {
-	display: flex;
-}
-.col-narrow {
-	width: 30%;
-    float: left;
-}
-.col-wide {
-    display: inline-block;
-	width: 70%;
-	padding-left: 1%;
+    max-width: 50%;
 }
 
 /* -------
@@ -217,6 +203,7 @@ Projects / Research
 .scroll-item-image-4,
 .scroll-item-image-5 {
     display: none;
+    cursor: pointer;
 }
 .show-img {
     display: block;

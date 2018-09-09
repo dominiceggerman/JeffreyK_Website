@@ -13,6 +13,9 @@ Mobile media (tablets) - 816 - 1100px
         letter-spacing: 0.07rem;
         line-height: 1.75rem;
     }
+    .comment {
+        font-size: 1.1rem;
+    }
 
     /* Header / Footer */
     footer p {
