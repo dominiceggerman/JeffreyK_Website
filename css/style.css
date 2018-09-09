@@ -13,10 +13,10 @@ body {
     font-size: 18px;
 }
 section {
-    margin: 5% 0;
+    padding: 1.5% 0%;
 }
 section:nth-of-type(even) {
-    background: linear-gradient(to right, rgb(235, 235, 235), rgb(255, 255, 255));
+    background: linear-gradient(to right,rgb(250, 250, 250), rgb(235, 235, 235), rgb(250, 250, 250));
 }
 section:last-of-type {
     padding-bottom: 5%;
@@ -207,11 +207,28 @@ Projects / Research
 }
 
 /* Image slides */
+.scroll-container {
+    position: relative;
+}
 .scroll-item-image-1 {
     display: none;
+    position: relative;
 }
 .show-img {
     display: block;
+}
+.display-left, .display-right {
+    cursor: pointer;
+    position: absolute;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    top: 45%;
+    padding: 3%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.display-right {
+    right: 0;
 }
 /* Modal box (fullscreen image pop) */
 #modal-0,
