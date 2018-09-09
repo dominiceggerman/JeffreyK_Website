@@ -210,9 +210,13 @@ Projects / Research
 .scroll-container {
     position: relative;
 }
-.scroll-item-image-1 {
+.scroll-item-image-0,
+.scroll-item-image-1,
+.scroll-item-image-2,
+.scroll-item-image-3,
+.scroll-item-image-4,
+.scroll-item-image-5 {
     display: none;
-    position: relative;
 }
 .show-img {
     display: block;
