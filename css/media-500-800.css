@@ -6,23 +6,50 @@ Mobile media (tablets) - 816 - 1100px
 
     /* General */
     body {
-        font-size: 20px;
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    body h2 {
+        padding: 3%;
+    }
+    h3 {
+        font-size: 1.6rem;
+        margin: 2%;
+    }
+    h4 {
+        font-size: 1.3rem;
     }
     p {
+        padding: 0.15rem;
+        margin: 0 2%;
         font-size: 1.3rem;
-        letter-spacing: 0.07rem;
+        letter-spacing: 0.1rem;
         line-height: 1.75rem;
     }
     .comment {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     /* Header / Footer */
+    .header-back {
+        height: 40vh;
+    }
     footer p {
-        margin: 0.75rem 0;
-        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        font-size: 1rem;
         letter-spacing: 0.07rem;
-        line-height: 1.5rem;
+        line-height: 1rem;
+    }
+
+    /* Nav */
+    nav a {
+        margin: 0;
+        font-size: 1.5rem;
     }
 
 }

@@ -40,12 +40,10 @@ p {
 }
 .comment {
     font-size: 0.9rem;
+    margin-bottom: 2%;
 }
 hr {
     border-color: rgb(40, 110, 160);
-}
-a {
-    /* text-decoration: none; */
 }
 a:hover {
     text-decoration: none;
