@@ -1,0 +1,71 @@
+/* ----------------------------
+Large media (fullscreen) - > 815px
+---------------------------- */
+
+@media screen and (min-width: 900px) {
+
+    /* General */
+    body {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    body h2 {
+        padding: 1%;
+    }
+    h3 {
+        font-size: 1.4rem;
+        margin: 1%;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    p {
+        padding: 0 2rem;
+        margin: 0.5% 1%;
+        font-size: 1.1rem;
+        letter-spacing: 0.09rem;
+        line-height: 1.5rem;
+    }
+    .comment {
+        font-size: 0.9rem;
+    }
+
+    /* Header / Footer */
+    .header-back {
+        height: 40vh;
+    }
+    footer p {
+        margin: 0.4rem 0;
+        font-size: 0.9rem;
+        letter-spacing: 0.07rem;
+        line-height: 0.7rem;
+    }
+
+    /* Nav */
+    nav a {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    /* Specific for larger displays */
+    footer {
+        padding: 1%;
+    }
+    footer h3 {
+        padding: 1%;
+    }
+    section h2, section h3, section h4 {
+        margin: 1%;
+        padding: 1rem;
+    }
+    .display-left, .display-right {
+        padding: 1%;
+    }
+    .width-limit {
+        max-width: 25%;
+        /* pixel limit? */
+    }
+
+}

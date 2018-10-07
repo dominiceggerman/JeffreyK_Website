@@ -135,7 +135,7 @@ Wrappers
 .grid-item-img img {
     max-height: 40vh;
 }
-.third-width {
+.width-limit {
     width: auto;
     max-width: 50%;
 }
@@ -174,7 +174,7 @@ Projects / Research
     margin: 0 auto;
 }
 .h-alpha-pair img {
-    max-width: 100%;
+    max-width: 55%;
     width: auto;
     height: auto;
 }
