@@ -132,12 +132,11 @@ Wrappers
     display: relative;
     margin: auto;
 }
-.grid-item-img img {
-    max-height: 40vh;
-}
 .width-limit {
     width: auto;
     max-width: 50%;
+    display: relative;
+    margin: auto;
 }
 
 /* -------
